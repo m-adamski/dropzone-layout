@@ -1,7 +1,7 @@
 {
     "name": "dropzone-layout",
     "version": "1.0.0",
-    "description": "ss",
+    "description": "Custom HTML layout for Dropzone",
     "main": "demo/index.html",
     "repository": "git@github.com:m-adamski/dropzone-layout.git",
     "author": "Maciej Adamski <m.adamski@ideacode.pl>",
