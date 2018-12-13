@@ -1,0 +1,136 @@
+.dropzone {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    min-height: 200px;
+    background-color: $dropzone-bg;
+    border: 1px dashed $dropzone-border;
+    padding: 20px;
+
+    &-preview {
+        margin: 20px 0 0;
+    }
+}
+
+.dz {
+    &-clickable {
+        cursor: pointer;
+    }
+
+    &-started {
+        .dz-message {
+            display: none;
+        }
+    }
+
+    &-message {
+        position: absolute;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10;
+
+        > span {
+            color: $dropzone-message;
+            font-size: 1.0em;
+            text-align: center;
+
+            &::before {
+                content: "";
+                position: relative;
+                display: block;
+                width: 64px;
+                height: 64px;
+                margin: 0 auto 10px;
+                background: url("../images/icon-upload.svg") 50% 50% no-repeat transparent;
+                background-size: contain;
+            }
+        }
+    }
+
+    &-preview {
+        position: relative;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 5px;
+    }
+
+    &-image {
+        position: relative;
+        display: block;
+        width: 48px;
+        height: 48px;
+        background: url("../images/icon-file.svg") 50% 50% no-repeat transparent;
+        background-size: contain;
+    }
+
+    &-details {
+        position: relative;
+        display: flex;
+        flex-flow: column nowrap;
+        flex-grow: 1;
+        padding: 0 20px;
+    }
+
+    &-details-info {
+        position: relative;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    &-filename {
+        position: relative;
+        display: block;
+        margin: 0 10px 0 0;
+    }
+
+    &-progress {
+        position: relative;
+        display: block;
+        width: 100%;
+        background-color: $preview-progress-bg;
+        margin: 5px 0;
+    }
+
+    &-upload {
+        position: relative;
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: $preview-upload;
+    }
+
+    &-status-mark {
+        position: relative;
+        display: block;
+        width: 16px;
+        height: 16px;
+        visibility: hidden;
+    }
+
+    &-success {
+        .dz-status-mark {
+            background: url("../images/icon-success.svg") 50% 50% no-repeat transparent;
+            background-size: contain;
+            visibility: visible;
+        }
+    }
+
+    &-error {
+        .dz-status-mark {
+            background: url("../images/icon-error.svg") 50% 50% no-repeat transparent;
+            background-size: contain;
+            visibility: visible;
+        }
+    }
+}

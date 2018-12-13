@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link type="text/css" rel="stylesheet" href="assets/css/demo.css" />
+        <link type="text/css" rel="stylesheet" href="assets/css/custom.css" />
+        <title>Hello, world!</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="wrapper">
+                <div class="dropzone"></div>
+                <div class="dropzone-preview"></div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="assets/vendor/jquery.js"></script>
+        <script type="text/javascript" src="assets/vendor/dropzone.js"></script>
+        <script type="text/javascript">
+            // Disabling autoDiscover
+            Dropzone.autoDiscover = false;
+
+            $(function() {
+                var myDropzone = $(".dropzone").dropzone({
+                    url: "#",
+                    createImageThumbnails: false,
+                    previewsContainer: ".dropzone-preview",
+                    previewTemplate:
+                        '<div class="dz-preview dz-file-preview"><div class="dz-image"></div><div class="dz-details"><div class="dz-details-info"><div class="dz-filename"><span data-dz-name></span></div><div class="dz-size"><span data-dz-size></span></div></div><div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress></span></div></div><div class="dz-status-mark"></div></div>'
+                });
+            });
+        </script>
+    </body>
+</html>

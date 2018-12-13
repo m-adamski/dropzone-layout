@@ -1,0 +1,27 @@
+{
+    "name": "dropzone-layout",
+    "version": "1.0.0",
+    "description": "ss",
+    "main": "demo/index.html",
+    "repository": "git@github.com:m-adamski/dropzone-layout.git",
+    "author": "Maciej Adamski <m.adamski@ideacode.pl>",
+    "license": "MIT",
+    "scripts": {
+        "prepare": "gulp",
+        "minify": "gulp minify",
+        "serve": "gulp serve"
+    },
+    "dependencies": {
+        "dropzone": "^5.5.1",
+        "jquery": "^3.3.1"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.26.3",
+        "gulp": "^4.0.0",
+        "gulp-csso": "^3.0.1",
+        "gulp-rename": "^1.4.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-sass-lint": "^1.4.0",
+        "gulp-sourcemaps": "^2.6.4"
+    }
+}
