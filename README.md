@@ -38,8 +38,8 @@ $(function() {
         createImageThumbnails: false,
         previewsContainer: ".dropzone-preview",
         previewTemplate: "<div class=\"dz-preview dz-file-preview\"><div class=\"dz-image\"></div><div class=\"dz-details\"><div class=\"dz-details-info\"><div class=\"dz-filename\"><span data-dz-name></span></div><div class=\"dz-size\"><span data-dz-size></span></div></div><div class=\"dz-progress\"><span class=\"dz-upload\" data-dz-uploadprogress></span></div></div><div class=\"dz-status-mark\"></div></div>"
-                });
-            });
+    });
+});
 ```
 
 It is very important to specify the parameters ``previewsContainer`` and ``previewTemplate``. You can find more information in the [documentation](https://www.dropzonejs.com/#configuration).
